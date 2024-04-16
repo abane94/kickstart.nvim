@@ -1,0 +1,16 @@
+--Display “Send to EHR”  on patient results screen for FMH practices where the patient has their portal set upDisplay “Send to EHR”  on patient results screen for FMH practices where the patient has their portal set upDisplay “Send to EHR”  on patient results screen for FMH practices where the patient has their portal set up require "lspconfig".efm.setup {
+--     init_options = {documentFormatting = true},
+--     settings = {
+--         rootMarkers = {".git/"},
+--         languages = {
+--             lua = {
+--                 {formatCommand = "lua-format -i", formatStdin = true}
+--             }, {
+--             handlebars = {
+--
+--         }
+--       }
+--         }
+--     }
+-- }
+return {}

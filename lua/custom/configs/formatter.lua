@@ -1,22 +1,20 @@
 return {
-  'stevearc/conform.nvim',
-  opts = {
--- Map of filetype to formatters
+  -- Map of filetype to formatters
 
   lang_to_ext = {
-    bash = "sh",
-    c_sharp = "cs",
-    elixir = "exs",
-    javascript = "js",
-    julia = "jl",
-    latex = "tex",
-    markdown = "md",
-    python = "py",
-    ruby = "rb",
-    rust = "rs",
-    teal = "tl",
-    typescript = "ts",
-    handelbars = "hbs",
+    bash = 'sh',
+    c_sharp = 'cs',
+    elixir = 'exs',
+    javascript = 'js',
+    julia = 'jl',
+    latex = 'tex',
+    markdown = 'md',
+    python = 'py',
+    ruby = 'rb',
+    rust = 'rs',
+    teal = 'tl',
+    typescript = 'ts',
+    handlebars = 'hbs',
   },
   -- formatters_by_ft = {
   --   lua = { "stylua" },
@@ -41,22 +39,23 @@ return {
   --   ["_"] = { "trim_whitespace" },
   -- },
   formatters_by_ft = {
-    ["javascript"] = { "prettier" },
-    ["javascriptreact"] = { "prettier" },
-    ["typescript"] = { "prettier" },
-    ["typescriptreact"] = { "prettier" },
-    ["vue"] = { "prettier" },
-    ["css"] = { "prettier" },
-    ["scss"] = { "prettier" },
-    ["less"] = { "prettier" },
-    ["html"] = { "prettier" },
-    ["json"] = { "prettier" },
-    ["jsonc"] = { "prettier" },
-    ["yaml"] = { "prettier" },
-    ["markdown"] = { "prettier" },
-    ["markdown.mdx"] = { "prettier" },
-    ["graphql"] = { "prettier" },
-    ["handlebars"] = { "prettier" },
+    ['javascript'] = { 'prettier' },
+    ['javascriptreact'] = { 'prettier' },
+    ['typescript'] = { 'prettier' },
+    ['typescriptreact'] = { 'prettier' },
+    ['vue'] = { 'prettier' },
+    ['css'] = { 'prettier' },
+    ['scss'] = { 'prettier' },
+    ['less'] = { 'prettier' },
+    ['html'] = { 'prettier' },
+    ['json'] = { 'prettier' },
+    ['jsonc'] = { 'prettier' },
+    ['yaml'] = { 'prettier' },
+    ['markdown'] = { 'prettier' },
+    ['markdown.mdx'] = { 'prettier' },
+    ['graphql'] = { 'prettier' },
+    ['handlebars'] = { 'prettier' },
+    lua = { 'stylua' },
   },
   -- If this is set, Conform will run the formatter on save.
   -- It will pass the table to conform.format().
@@ -120,6 +119,4 @@ return {
   --     }
   --   end,
   -- },
-
-  },
 }

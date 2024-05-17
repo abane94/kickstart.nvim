@@ -4,6 +4,14 @@
 -- See the kickstart.nvim README for more information
 -- require("custom.keys")
 
+local function homeDir()
+  if jit.os == 'Windows' then
+    return os.getenv 'UserProfile'
+  else
+    return os.getenv 'HOME'
+  end
+end
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -16,7 +24,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = homeDir() .. '/.vim/undodir'
 vim.opt.undofile = true
 
 -- vim.opt.hlsearch = false
@@ -28,8 +36,6 @@ vim.opt.scrolloff = 8
 
 vim.opt.updatecount = 50
 
-vim.opt.colorcolumn = "80"
-
+vim.opt.colorcolumn = '80'
 
 return {}
-
